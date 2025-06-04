@@ -1,0 +1,1546 @@
+{
+  "91.44cm - 121.92cm": {
+    "30kg - 40kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 2.0,
+          "HotWeatherL": 2.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 1.5,
+            "HotWeatherL": 2.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 1.8,
+            "HotWeatherL": 2.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.2,
+            "HotWeatherL": 2.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "40kg - 50kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 2.0,
+          "HotWeatherL": 2.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 1.5,
+            "HotWeatherL": 2.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 1.8,
+            "HotWeatherL": 2.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.2,
+            "HotWeatherL": 2.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "50kg - 60kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 2.5,
+          "HotWeatherL": 3.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.0,
+            "HotWeatherL": 2.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.3,
+            "HotWeatherL": 2.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.7,
+            "HotWeatherL": 3.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "60kg - 70kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 2.5,
+          "HotWeatherL": 3.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.0,
+            "HotWeatherL": 2.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.3,
+            "HotWeatherL": 2.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.7,
+            "HotWeatherL": 3.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "70kg - 80kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 2.5,
+          "HotWeatherL": 3.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.0,
+            "HotWeatherL": 2.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.3,
+            "HotWeatherL": 2.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.7,
+            "HotWeatherL": 3.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "80kg - 90kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.0,
+          "HotWeatherL": 3.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.5,
+            "HotWeatherL": 3.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.8,
+            "HotWeatherL": 3.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.2,
+            "HotWeatherL": 3.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "90kg - 100kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.0,
+          "HotWeatherL": 3.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.5,
+            "HotWeatherL": 3.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.8,
+            "HotWeatherL": 3.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.2,
+            "HotWeatherL": 3.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "100kg - 120kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.0,
+          "HotWeatherL": 3.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.5,
+            "HotWeatherL": 3.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.8,
+            "HotWeatherL": 3.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.2,
+            "HotWeatherL": 3.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    }
+  },
+  "121.92cm - 152.4cm": {
+    "30kg - 40kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 2.5,
+          "HotWeatherL": 3.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.0,
+            "HotWeatherL": 2.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.3,
+            "HotWeatherL": 2.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.7,
+            "HotWeatherL": 3.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "40kg - 50kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 2.5,
+          "HotWeatherL": 3.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.0,
+            "HotWeatherL": 2.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.3,
+            "HotWeatherL": 2.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.7,
+            "HotWeatherL": 3.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "50kg - 60kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.0,
+          "HotWeatherL": 3.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.5,
+            "HotWeatherL": 3.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.8,
+            "HotWeatherL": 3.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.2,
+            "HotWeatherL": 3.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "60kg - 70kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.0,
+          "HotWeatherL": 3.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.5,
+            "HotWeatherL": 3.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.8,
+            "HotWeatherL": 3.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.2,
+            "HotWeatherL": 3.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "70kg - 80kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.0,
+          "HotWeatherL": 3.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.5,
+            "HotWeatherL": 3.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.8,
+            "HotWeatherL": 3.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.2,
+            "HotWeatherL": 3.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "80kg - 90kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.5,
+          "HotWeatherL": 4.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.0,
+            "HotWeatherL": 3.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.3,
+            "HotWeatherL": 3.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.7,
+            "HotWeatherL": 4.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "90kg - 100kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.5,
+          "HotWeatherL": 4.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.0,
+            "HotWeatherL": 3.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.3,
+            "HotWeatherL": 3.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.7,
+            "HotWeatherL": 4.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "100kg - 120kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.5,
+          "HotWeatherL": 4.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.0,
+            "HotWeatherL": 3.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.3,
+            "HotWeatherL": 3.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.7,
+            "HotWeatherL": 4.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    }
+  },
+  "152.4cm - 182.88cm": {
+    "30kg - 40kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.0,
+          "HotWeatherL": 3.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.5,
+            "HotWeatherL": 3.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.8,
+            "HotWeatherL": 3.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.2,
+            "HotWeatherL": 3.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "40kg - 50kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.0,
+          "HotWeatherL": 3.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.5,
+            "HotWeatherL": 3.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.8,
+            "HotWeatherL": 3.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.2,
+            "HotWeatherL": 3.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "50kg - 60kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.5,
+          "HotWeatherL": 4.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.0,
+            "HotWeatherL": 3.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.3,
+            "HotWeatherL": 3.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.7,
+            "HotWeatherL": 4.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "60kg - 70kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.5,
+          "HotWeatherL": 4.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.0,
+            "HotWeatherL": 3.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.3,
+            "HotWeatherL": 3.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.7,
+            "HotWeatherL": 4.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "70kg - 80kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.5,
+          "HotWeatherL": 4.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.0,
+            "HotWeatherL": 3.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.3,
+            "HotWeatherL": 3.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.7,
+            "HotWeatherL": 4.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "80kg - 90kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 4.0,
+          "HotWeatherL": 4.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.5,
+            "HotWeatherL": 4.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.8,
+            "HotWeatherL": 4.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 4.2,
+            "HotWeatherL": 4.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "90kg - 100kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 4.0,
+          "HotWeatherL": 4.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.5,
+            "HotWeatherL": 4.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.8,
+            "HotWeatherL": 4.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 4.2,
+            "HotWeatherL": 4.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "100kg - 120kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 4.0,
+          "HotWeatherL": 4.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.5,
+            "HotWeatherL": 4.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.8,
+            "HotWeatherL": 4.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 4.2,
+            "HotWeatherL": 4.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    }
+  },
+  "182.88cm - 213.36cm": {
+    "30kg - 40kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.0,
+          "HotWeatherL": 3.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.5,
+            "HotWeatherL": 3.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.8,
+            "HotWeatherL": 3.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.2,
+            "HotWeatherL": 3.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "40kg - 50kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.0,
+          "HotWeatherL": 3.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.5,
+            "HotWeatherL": 3.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 2.8,
+            "HotWeatherL": 3.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.2,
+            "HotWeatherL": 3.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "50kg - 60kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.5,
+          "HotWeatherL": 4.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.0,
+            "HotWeatherL": 3.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.3,
+            "HotWeatherL": 3.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.7,
+            "HotWeatherL": 4.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "60kg - 70kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.5,
+          "HotWeatherL": 4.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.0,
+            "HotWeatherL": 3.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.3,
+            "HotWeatherL": 3.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.7,
+            "HotWeatherL": 4.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "70kg - 80kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 3.5,
+          "HotWeatherL": 4.0
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.0,
+            "HotWeatherL": 3.5
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.3,
+            "HotWeatherL": 3.8
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.7,
+            "HotWeatherL": 4.2
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "80kg - 90kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 4.0,
+          "HotWeatherL": 4.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.5,
+            "HotWeatherL": 4.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.8,
+            "HotWeatherL": 4.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 4.2,
+            "HotWeatherL": 4.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "90kg - 100kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 4.0,
+          "HotWeatherL": 4.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.5,
+            "HotWeatherL": 4.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.8,
+            "HotWeatherL": 4.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 4.2,
+            "HotWeatherL": 4.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    },
+    "100kg - 120kg": {
+      "Male": {
+        "WaterIntake": {
+          "NormalWeatherL": 4.0,
+          "HotWeatherL": 4.5
+        },
+        "HydrationTips": [
+          "Drink water regularly throughout the day.",
+          "Use a reusable water bottle to track intake.",
+          "Include fruits and vegetables with high water content."
+        ]
+      },
+      "Female": {
+        "General": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.5,
+            "HotWeatherL": 4.0
+          },
+          "HydrationTips": [
+            "Drink water regularly throughout the day.",
+            "Use a reusable water bottle to track intake.",
+            "Include fruits and vegetables with high water content."
+          ]
+        },
+        "Pregnancy": {
+          "WaterIntake": {
+            "NormalWeatherL": 3.8,
+            "HotWeatherL": 4.3
+          },
+          "HydrationTips": [
+            "Drink a glass of water with every meal and snack.",
+            "Stay hydrated to reduce swelling and constipation.",
+            "Carry a bottle and sip frequently during the day."
+          ]
+        },
+        "Breastfeeding": {
+          "WaterIntake": {
+            "NormalWeatherL": 4.2,
+            "HotWeatherL": 4.7
+          },
+          "HydrationTips": [
+            "Drink water before and after nursing sessions.",
+            "Hydrate more to support milk production.",
+            "Avoid caffeine and alcohol to retain hydration."
+          ]
+        }
+      }
+    }
+  }
+}
