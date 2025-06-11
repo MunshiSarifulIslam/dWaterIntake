@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct dWaterIntakeApp: App {
+    @StateObject private var manager: StoreManager = StoreManager()
     var body: some Scene {
         WindowGroup {
             SplashScreen()
+                .environmentObject(manager)
+                .environment(\.managedObjectContext, manager.container.viewContext)
         }
     }
 }
