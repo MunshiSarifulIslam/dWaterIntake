@@ -45,7 +45,7 @@ struct DashboardView: View {
                 HStack {
                     Spacer()
                     Text("Let's Calculate")
-                        .foregroundStyle(LinearGradient(colors: [Color(hex: "#00FFFF"), Color(hex: "##7831F3")], startPoint: .leading, endPoint: .trailing))
+                        .foregroundStyle(LinearGradient(colors: [Color(hex: "#00FFFF"), Color(hex: "#7831F3")], startPoint: .leading, endPoint: .trailing))
                         .fontWeight(.bold)
                         .padding()
                         .padding(.horizontal, 60)

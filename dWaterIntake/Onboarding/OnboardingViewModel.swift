@@ -21,22 +21,50 @@ class OnboardingViewModel: ObservableObject {
     let manager = HydrationDataManager()
     
     func validateFields() -> Bool {
+        // Empty check
         guard !onboardingModel.name.isEmpty,
               !onboardingModel.weight.isEmpty,
               !onboardingModel.height.isEmpty,
               !onboardingModel.age.isEmpty,
-              !onboardingModel.gender.isEmpty
-        else {
-            DispatchQueue.main.async {
-                self.errorMessage = ErrorWrapper(message: "All fields are required")
-            }
+              !onboardingModel.gender.isEmpty else {
+            errorMessage = ErrorWrapper(message: "All fields are required")
             return false
         }
-        DispatchQueue.main.async {
-            self.errorMessage = nil
+        
+        // Name validation – only letters and spaces
+        let nameRegex = "^[A-Za-z ]+$"
+        if !NSPredicate(format: "SELF MATCHES %@", nameRegex).evaluate(with: onboardingModel.name) {
+            errorMessage = ErrorWrapper(message: "Name should contain only letters and spaces.")
+            return false
         }
+        
+        // Numeric fields validation
+        if Double(onboardingModel.weight) == nil {
+            errorMessage = ErrorWrapper(message: "Weight must be a valid number.")
+            return false
+        }
+        
+        if Double(onboardingModel.height) == nil {
+            errorMessage = ErrorWrapper(message: "Height must be a valid number.")
+            return false
+        }
+        
+        if Int(onboardingModel.age) == nil {
+            errorMessage = ErrorWrapper(message: "Age must be a valid number.")
+            return false
+        }
+        
+        // Optional: Gender validation (basic)
+        let genderRegex = "^(?i)(male|female)$" // Allows: male, Female.
+        if !NSPredicate(format: "SELF MATCHES %@", genderRegex).evaluate(with: onboardingModel.gender) {
+            errorMessage = ErrorWrapper(message: "Gender must be Male, Female, or Other.")
+            return false
+        }
+        
+        errorMessage = nil
         return true
     }
+
 
     func saveUserData(context: NSManagedObjectContext) {
         guard validateFields() else { return }
