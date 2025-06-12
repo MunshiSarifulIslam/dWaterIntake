@@ -47,7 +47,7 @@ struct OnboardingView: View {
             Button {
                 if viewModel.validateFields() {
                     showConfirmationDialog = true
-                    viewModel.saveUserData(context: viewContext)
+//                    viewModel.saveUserData(context: viewContext)
                 }
             } label: {
                 HStack {

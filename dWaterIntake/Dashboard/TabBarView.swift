@@ -60,7 +60,7 @@ struct CustomTabBar: View {
                 Image(systemName: icon)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 36, height: 36)
+                    .frame(width: 26, height: 26)
                 Text(label)
                     .font(.system(size: 16, weight: selectedTab == tab ? .bold : .regular))
             }
