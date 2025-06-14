@@ -15,6 +15,12 @@ struct dWaterIntakeApp: App {
             SplashScreen()
                 .environmentObject(manager)
                 .environment(\.managedObjectContext, manager.container.viewContext)
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                        requestNotificationPermission()
+                        scheduleDailyHydrationReminders()
+                    }
+                }
         }
     }
 }

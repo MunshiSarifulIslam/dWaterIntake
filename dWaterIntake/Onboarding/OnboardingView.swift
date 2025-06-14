@@ -92,10 +92,6 @@ struct OnboardingView: View {
         }
         .foregroundStyle(Color.black)
         .padding(16)
-        .onAppear {
-            requestNotificationPermission()
-            scheduleHydrationReminders()
-        }
     }
 }
 
