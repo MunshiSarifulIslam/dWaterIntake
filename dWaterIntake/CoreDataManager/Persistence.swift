@@ -8,24 +8,33 @@
 import CoreData
 
 class StoreManager: NSObject, ObservableObject {
-    let container: NSPersistentContainer = NSPersistentContainer(name: "IntakeStoreModel")
+    let container: NSPersistentContainer
     @Published var storeDetails: StoreDetails?
+
     override init() {
+        container = NSPersistentContainer(name: "IntakeStoreModel")
         super.init()
-        container.loadPersistentStores { _, error in
+        
+        container.loadPersistentStores { [weak self] _, error in
             if let error = error {
                 print("Error loading persistent stores: \(error)")
+            } else {
+                DispatchQueue.main.async {
+                    self?.fetchUserDetails()
+                }
             }
         }
     }
-    
+
     func fetchUserDetails() {
         let context = container.viewContext
         let fetchRequest: NSFetchRequest<StoreDetails> = StoreDetails.fetchRequest()
-        
+
         do {
             let stores = try context.fetch(fetchRequest)
-            self.storeDetails = stores.first
+            DispatchQueue.main.async { [weak self] in
+                self?.storeDetails = stores.first
+            }
         } catch {
             print("Error fetching user details: \(error)")
         }

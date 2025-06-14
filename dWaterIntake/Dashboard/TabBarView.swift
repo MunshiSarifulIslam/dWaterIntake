@@ -13,13 +13,22 @@ enum Tab {
 
 struct TabBarView: View {
     @State private var selectedTab: Tab = .home
+    @StateObject private var storeManager = StoreManager()
+    @StateObject private var dashboardVM: DashboardViewModel
+
+    init() {
+        let manager = StoreManager()
+        _storeManager = StateObject(wrappedValue: manager)
+        _dashboardVM = StateObject(wrappedValue: DashboardViewModel(storeManager: manager))
+    }
+    
     var body: some View {
         VStack(spacing: 0) {
             Spacer()
             ZStack {
                 switch selectedTab {
                 case .home:
-                    DashboardView()
+                    DashboardView(viewModel: dashboardVM)
                 case .history:
                     HistoryView()
                 case .settings:

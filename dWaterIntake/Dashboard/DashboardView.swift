@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct DashboardView: View {
-    @StateObject private var storeManager = StoreManager()
-    @State private var incrementValue: Int = 0
+    @ObservedObject var viewModel: DashboardViewModel
     var body: some View {
         VStack(spacing: 16) {
             Text("Total Intake Water Needed")
                 .font(.system(size: 24))
                 .fontWeight(.bold)
                 .foregroundColor(Color.black)
-            if let user = storeManager.storeDetails?.waterConsumttion {
-                Text("\(calculateLtoML(data: user)) ml")
+            if viewModel.waterML > 0 {
+                Text("\(Int(viewModel.waterML)) ml")
                     .font(.system(size: 24))
                     .fontWeight(.bold)
                     .foregroundColor(Color.black)
@@ -25,26 +24,27 @@ struct DashboardView: View {
                 Text("No user details found.")
                     .foregroundStyle(.gray)
             }
-            Text("You Take water")
-                .font(.system(size: 24))
-                .fontWeight(.bold)
-                .foregroundColor(Color.black)
-                .padding(.top, 50)
-            Text("\(incrementValue)")
-                .font(.system(size: 24))
-                .fontWeight(.bold)
-                .foregroundColor(Color.black)
-            
+            HStack {
+                Text("You Take water")
+                    .font(.system(size: 24))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                Text("\(viewModel.incrementValue)")
+                    .font(.system(size: 24))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+            }
+            .padding(.top, 20)
+            WaterGlassView(
+                currentIntake: CGFloat(viewModel.incrementValue),
+                dailyGoal: CGFloat(viewModel.waterML)
+            )
             Button {
-                if let user = storeManager.storeDetails?.waterConsumttion {
-                    if incrementValue >= Int(calculateLtoML(data: user)) ?? 0 {
-                        incrementValue += 200
-                    }
-                }
+                viewModel.increaseIntake()
             } label: {
                 HStack {
                     Spacer()
-                    Text("Let's Calculate")
+                    Text("Water Intake")
                         .foregroundStyle(LinearGradient(colors: [Color(hex: "#00FFFF"), Color(hex: "#7831F3")], startPoint: .leading, endPoint: .trailing))
                         .fontWeight(.bold)
                         .padding()
@@ -58,21 +58,27 @@ struct DashboardView: View {
                         .shadow(color: Color.black.opacity(0.25), radius: 10, x: 0, y: 5)
                     Spacer()
                 }
-                
             }
-            .padding(.top, 90)
+            .padding(.top, 20)
         }
-        .padding()
-        .onAppear {
-            storeManager.fetchUserDetails()
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+            viewModel.checkAndResetIfNewDay()
         }
-    }
-    func calculateLtoML(data: String) -> String {
-        let result = String(data).compactMap { Double(String($0)) }.reduce(0, +) * 1000
-        return String(result)
     }
 }
 
 #Preview {
-    DashboardView()
+    let storeManager = StoreManager()
+    let context = storeManager.container.viewContext
+
+    let details = StoreDetails(context: context)
+    details.name = "Preview User"
+    details.waterConsumttion = "2.5"
+
+    try? context.save()
+
+    let viewModel = DashboardViewModel(storeManager: storeManager)
+    viewModel.incrementValue = 600
+
+    return DashboardView(viewModel: viewModel)
 }
