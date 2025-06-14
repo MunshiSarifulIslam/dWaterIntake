@@ -51,15 +51,6 @@ struct SplashScreen: View {
                 }
             }
             .ignoresSafeArea()
-//            .onAppear {
-//                // Just call the function directly
-//                if let data = loadHydrationData() {
-//                    print("✅ Loaded hydration data successfully")
-//                    print(data) // You can inspect the model here
-//                } else {
-//                    print("❌ Failed to load hydration data")
-//                }
-//            }
         }
     }
 }

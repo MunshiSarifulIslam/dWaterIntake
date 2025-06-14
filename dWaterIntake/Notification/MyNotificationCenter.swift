@@ -23,33 +23,30 @@ func requestNotificationPermission() {
     }
 }
 
-func scheduleHydrationReminders() {
+func scheduleDailyHydrationReminders() {
     let center = UNUserNotificationCenter.current()
     center.removeAllPendingNotificationRequests()
-    
-    let hoursToNotify = Array(6...22).filter { $0 % 2 == 0 }
 
-    for hour in hoursToNotify {
-        let content = UNMutableNotificationContent()
-        content.title = "💧 Time to Hydrate"
-        content.body = "Don't forget to drink water!"
-        content.sound = .default
-        
+    let hours = [6, 8, 10, 12, 14, 16, 18, 20, 22, 0]
+
+    for (index, hour) in hours.enumerated() {
         var dateComponents = DateComponents()
         dateComponents.hour = hour
         dateComponents.minute = 0
-        
+
+        let content = UNMutableNotificationContent()
+        content.title = "Hydration Reminder 💧"
+        content.body = "Time to drink some water!"
+        content.sound = .default
+        content.badge = NSNumber(value: index + 1)
+
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-        
-        let request = UNNotificationRequest(
-            identifier: "waterIntakeNotification_\(hour)",
-            content: content,
-            trigger: trigger
-        )
-        
+
+        let request = UNNotificationRequest(identifier: "hydration_\(hour)", content: content, trigger: trigger)
+
         center.add(request) { error in
             if let error = error {
-                print("Error scheduling notification for hour \(hour): \(error)")
+                print("Error scheduling notification for \(hour): \(error.localizedDescription)")
             }
         }
     }
