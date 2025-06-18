@@ -30,7 +30,7 @@ struct TabBarView: View {
                 case .home:
                     DashboardView(viewModel: dashboardVM)
                 case .history:
-                    HistoryView()
+                    HistoryView(context: storeManager.container.viewContext)
                 case .settings:
                     SettingsView()
                 }
