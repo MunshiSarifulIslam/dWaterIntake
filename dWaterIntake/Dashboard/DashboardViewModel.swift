@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import CoreData
 import SwiftUI
+import CoreData
 
 class DashboardViewModel: ObservableObject {
     @Published var incrementValue: Int = 0 {
@@ -17,26 +17,41 @@ class DashboardViewModel: ObservableObject {
     }
 
     @Published var waterML: Double = 0
+    @AppStorage("isLoggedIn") private var isLoggedIn = false
 
     private let storeManager: StoreManager
     private var context: NSManagedObjectContext
+    private var lastSavedDate: Date
     private var timer: Timer?
 
     init(storeManager: StoreManager) {
         self.storeManager = storeManager
         self.context = storeManager.container.viewContext
 
-        // Load saved intake if same day
         let today = Calendar.current.startOfDay(for: Date())
-        let lastSaved = UserDefaults.standard.object(forKey: "lastSavedDate") as? Date ?? .distantPast
-        if Calendar.current.isDate(lastSaved, inSameDayAs: today) {
-            self.incrementValue = UserDefaults.standard.integer(forKey: "currentIncrementValue")
+//        let today = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: 1, to: Date())!)
+
+        if let savedDate = UserDefaults.standard.object(forKey: "lastSavedDate") as? Date {
+            lastSavedDate = Calendar.current.startOfDay(for: savedDate)
+        } else {
+            lastSavedDate = today
+            UserDefaults.standard.set(today, forKey: "lastSavedDate")
+        }
+
+        if isLoggedIn {
+            if Calendar.current.isDate(lastSavedDate, inSameDayAs: today) {
+                self.incrementValue = UserDefaults.standard.integer(forKey: "currentIncrementValue")
+            } else {
+                handleDateDifference()
+                self.incrementValue = 0
+                UserDefaults.standard.set(0, forKey: "currentIncrementValue")
+            }
         }
 
         fetchUserDetails()
-        checkAndResetIfNewDay()
         startDailyCheckTimer()
     }
+
     deinit {
         timer?.invalidate()
     }
@@ -57,18 +72,33 @@ class DashboardViewModel: ObservableObject {
         incrementValue += amount
     }
 
-    func checkAndResetIfNewDay() {
-        let lastSaved = UserDefaults.standard.object(forKey: "lastSavedDate") as? Date ?? .distantPast
-        let today = Calendar.current.startOfDay(for: Date())
-
-        if !Calendar.current.isDate(lastSaved, inSameDayAs: today) {
-            let saveDate = Calendar.current.date(byAdding: .day, value: -1, to: today) ?? today
-            saveDailyIntake(for: saveDate, amount: incrementValue)
-
-            incrementValue = 0
-            UserDefaults.standard.set(0, forKey: "currentIncrementValue")
-            UserDefaults.standard.set(today, forKey: "lastSavedDate")
+    func handleDateDifference() {
+        let currentDate = Calendar.current.startOfDay(for: Date())
+//        let currentDate = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: 1, to: Date())!)
+        guard !Calendar.current.isDate(currentDate, inSameDayAs: lastSavedDate) else {
+            return
         }
+
+        let components = Calendar.current.dateComponents([.day], from: lastSavedDate, to: currentDate)
+        guard let dayDifference = components.day else { return }
+
+        let valueToSave = UserDefaults.standard.integer(forKey: "currentIncrementValue")
+
+        if dayDifference == 1 {
+            saveDailyIntake(for: lastSavedDate, amount: valueToSave)
+        } else if dayDifference > 1 {
+            saveDailyIntake(for: lastSavedDate, amount: valueToSave)
+            for i in 1..<dayDifference {
+                if let missingDate = Calendar.current.date(byAdding: .day, value: i, to: lastSavedDate) {
+                    saveDailyIntake(for: missingDate, amount: 0)
+                }
+            }
+        }
+
+        incrementValue = 0
+        UserDefaults.standard.set(0, forKey: "currentIncrementValue")
+        UserDefaults.standard.set(currentDate, forKey: "lastSavedDate")
+        lastSavedDate = currentDate
     }
 
     func saveDailyIntake(for date: Date, amount: Int) {
@@ -83,20 +113,18 @@ class DashboardViewModel: ObservableObject {
                 log.intakeAmount = Int64(amount)
                 try context.save()
                 print("Saved \(amount)ml for \(date)")
+            } else {
+                print("Entry already exists for \(date), skipping save.")
             }
         } catch {
             print("Error saving daily intake: \(error)")
         }
     }
 
-    func saveDailyIntake() {
-        let today = Calendar.current.startOfDay(for: Date())
-        saveDailyIntake(for: today, amount: incrementValue)
-    }
-
     func startDailyCheckTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
-            self?.checkAndResetIfNewDay()
+            self?.handleDateDifference()
         }
     }
 }
+
