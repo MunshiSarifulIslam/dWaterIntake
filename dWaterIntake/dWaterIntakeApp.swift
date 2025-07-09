@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-
-import SwiftUI
 import UserNotifications
 
 @main
@@ -36,7 +34,8 @@ struct dWaterIntakeApp: App {
         }
         .onChange(of: scenePhase) { oldPhase, newPhase in
             if newPhase == .background || newPhase == .inactive {
-                dashboardViewModel.saveDailyIntake()
+                dashboardViewModel.handleDateDifference()
+//                dashboardViewModel.saveDailyIntake()
             }
         }
     }

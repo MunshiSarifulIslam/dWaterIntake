@@ -61,9 +61,6 @@ struct DashboardView: View {
             }
             .padding(.top, 20)
         }
-        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
-            viewModel.checkAndResetIfNewDay()
-        }
     }
 }
 

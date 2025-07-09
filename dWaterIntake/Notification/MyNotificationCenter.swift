@@ -11,7 +11,7 @@ import UserNotifications
 func setupHydrationNotifications() {
     requestNotificationPermission()
     scheduleDailyHydrationReminders()
-    scheduleDailyMidnightNotification()
+//    scheduleDailyMidnightNotification()
 }
 
 func requestNotificationPermission() {
