@@ -13,4 +13,5 @@ struct OnboardingModel: Codable {
     var height: String
     var age: String
     var gender: String
+    var femaleCondition: String? = nil
 }

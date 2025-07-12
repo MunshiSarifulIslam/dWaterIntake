@@ -17,37 +17,46 @@ struct OnboardingView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             Spacer()
-            Text("Enter Your Name")
-                .fontWeight(.semibold)
+           CustomTitleView(title: "Enter Your Name", isMendatory: true)
             TextField("", text: $viewModel.onboardingModel.name)
                 .customTextFieldStyle()
             
-            Text("Enter Your Weight")
-                .fontWeight(.semibold)
+            CustomTitleView(title: "Enter Your Weight", isMendatory: true)
             TextField("", text: $viewModel.onboardingModel.weight)
                 .customTextFieldStyle()
             
-            Text("Enter Your Height")
-                .fontWeight(.semibold)
+            CustomTitleView(title: "Enter Your Height", isMendatory: true)
             TextField("", text: $viewModel.onboardingModel.height)
                 .customTextFieldStyle()
             
-            Text("Enter Your Age")
-                .fontWeight(.semibold)
+            CustomTitleView(title: "Enter Your Age", isMendatory: true)
             TextField("", text: $viewModel.onboardingModel.age)
                 .customTextFieldStyle()
             
             HStack(spacing: 16) {
-                Text("Chose Your gender")
-                    .fontWeight(.semibold)
-                TextField("", text: $viewModel.onboardingModel.gender)
-                    .customTextFieldStyle()
+                CustomTitleView(title: "Chose Your gender", isMendatory: true)
+                Spacer()
+                Picker("Gender", selection: $viewModel.onboardingModel.gender) {
+                    Text("Male").tag("Male")
+                    Text("Female").tag("Female")
+                }
+
             }
             .padding(.top, 16)
+            if viewModel.onboardingModel.gender == "Female" {
+                HStack {
+                    CustomTitleView(title: "Special Condition", isMendatory: false)
+                    Spacer()
+                    Picker("Condition", selection: $viewModel.onboardingModel.femaleCondition) {
+                            Text("None").tag("None")
+                            Text("Pregnant").tag("Pregnant")
+                            Text("Breastfeeding").tag("Breastfeeding")
+                        }
+                }
+            }
             Button {
                 if viewModel.validateFields() {
                     showConfirmationDialog = true
-//                    viewModel.saveUserData(context: viewContext)
                 }
             } label: {
                 HStack {
