@@ -15,7 +15,7 @@ struct ErrorWrapper: Identifiable {
 }
 
 class OnboardingViewModel: ObservableObject {
-    @Published var onboardingModel = OnboardingModel(name: "", weight: "", height: "", age: "", gender: "")
+    @Published var onboardingModel = OnboardingModel(name: "", weight: "", height: "", age: "", gender: "", femaleCondition: "")
     @AppStorage("isLoggedIn") private var isLoggedIn = false
     @Published var errorMessage: ErrorWrapper?
     let manager = HydrationDataManager()
@@ -51,11 +51,11 @@ class OnboardingViewModel: ObservableObject {
             return false
         }
         
-        let genderRegex = "^(?i)(male|female)$" // Allows: male, Female.
-        if !NSPredicate(format: "SELF MATCHES %@", genderRegex).evaluate(with: onboardingModel.gender) {
-            errorMessage = ErrorWrapper(message: "Gender must be Male, Female, or Other.")
-            return false
-        }
+//        let genderRegex = "^(?i)(male|female)$" // Allows: male, Female.
+//        if !NSPredicate(format: "SELF MATCHES %@", genderRegex).evaluate(with: onboardingModel.gender) {
+//            errorMessage = ErrorWrapper(message: "Gender must be Male, Female, or Other.")
+//            return false
+//        }
         
         errorMessage = nil
         return true
@@ -71,7 +71,8 @@ class OnboardingViewModel: ObservableObject {
         saveData.weight = onboardingModel.weight
         saveData.height = onboardingModel.height
         saveData.gender = onboardingModel.gender
-        if let waterRate = manager.getNormalWaterIntake(height: Double(onboardingModel.height) ?? 0, weight: Double(onboardingModel.weight) ?? 0, gender: onboardingModel.gender) {
+        let femaleConditionValue = onboardingModel.femaleCondition
+        if let waterRate = manager.getNormalWaterIntake(height: Double(onboardingModel.height) ?? 0, weight: Double(onboardingModel.weight) ?? 0, gender: onboardingModel.gender, specialCondition: femaleConditionValue) {
             saveData.waterConsumttion = String(waterRate)
         }
         
@@ -92,7 +93,7 @@ class OnboardingViewModel: ObservableObject {
     }
 
     func clearFields() {
-        onboardingModel = OnboardingModel(name: "", weight: "", height: "", age: "", gender: "")
+        onboardingModel = OnboardingModel(name: "", weight: "", height: "", age: "", gender: "", femaleCondition: "")
     }
 
     private func printCoreDataPath() {
