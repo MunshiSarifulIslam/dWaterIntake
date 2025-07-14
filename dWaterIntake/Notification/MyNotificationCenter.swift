@@ -5,13 +5,11 @@
 //  Created by Munshi Sariful Islam on 13/06/25.
 //
 
-import Foundation
 import UserNotifications
 
 func setupHydrationNotifications() {
     requestNotificationPermission()
     scheduleDailyHydrationReminders()
-//    scheduleDailyMidnightNotification()
 }
 
 func requestNotificationPermission() {
@@ -53,21 +51,10 @@ func scheduleDailyHydrationReminders() {
     }
 }
 
-func scheduleDailyMidnightNotification() {
-    let center = UNUserNotificationCenter.current()
-    center.removePendingNotificationRequests(withIdentifiers: ["dailyMidnightReminder"])
-
-    let content = UNMutableNotificationContent()
-    content.title = "Water Intake Saved!"
-    content.body = "Your daily water intake has been saved to history."
-    content.sound = .default
-
-    var dateComponents = DateComponents()
-    dateComponents.hour = 0
-    dateComponents.minute = 0
-
-    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-    let request = UNNotificationRequest(identifier: "dailyMidnightReminder", content: content, trigger: trigger)
-
-    center.add(request)
+func cancelHydrationNotifications() {
+    let hours = [6, 8, 10, 12, 14, 16, 18, 20, 22, 0]
+    let identifiers = hours.map { "hydration_\($0)" }
+    UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: identifiers)
+    UNUserNotificationCenter.current().removeAllDeliveredNotifications()
+    print("Hydration notifications cancelled.")
 }

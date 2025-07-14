@@ -8,80 +8,50 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State var isDarkModeEnabled: Bool = true
-    @State var downloadViaWifiEnabled: Bool = false
-    
+    @State var isDarkModeEnabled: Bool = false
+    @AppStorage("notificationsEnabled") private var notificationsEnabled: Bool = true
+    @State var userImage: Image? = nil
     var body: some View {
         NavigationView {
-            Form {
-                Section(header: Text("Profile")) {
-                    VStack {
-                        Image(systemName: "person.circle")
-                            .resizable()
-                            .frame(width:100, height: 100, alignment: .center)
-                            .foregroundStyle(Color.secondary)
-                        Text("Munshi Sariful")
-                            .font(.title)
-                            .fontWeight(.semibold)
-                        Text("www.apple.com")
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-                            .padding(.bottom)
-                        Button {
-                            print("This button under development")
-                        } label: {
-                            Text("Edit profile")
-                                .font(.system(size: 18))
-                                .foregroundStyle(Color.white)
-                                .padding(.horizontal, 80)
-                                .padding(.vertical, 10)
-                            
-                        }
-                        .background(Color.blue)
-                        .cornerRadius(25)
+            VStack {
+                VStack {
+                    Image(systemName: "person.circle")
+                        .resizable()
+                        .frame(width:100, height: 100, alignment: .center)
+                        .foregroundStyle(Color.secondary)
+                    Text("Munshi Sariful")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                    Button {
+                        print("This button under development")
+                    } label: {
+                        Text("Edit profile")
+                            .font(.system(size: 18))
+                            .foregroundStyle(Color.white)
+                            .padding(.horizontal, 80)
+                            .padding(.vertical, 10)
                         
                     }
-                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .cornerRadius(25)
+                    .padding(.bottom)
                 }
-                
-                Section(header: Text("CONTENT"), content: {
-                    HStack{
-                        Image(systemName: "star")
-                        Text("Favorites")
+                Form {
+                    Section(header: Text("Appearance")) {
+                        Toggle("Dark Mode", isOn: $isDarkModeEnabled)
                     }
-                    
-                    HStack{
-                        Image(systemName: "arrowshape.down")
-                        Text("Downloads")
+                    Section(header: Text("Controls")) {
+                        Toggle("Hydration Reminders", isOn: $notificationsEnabled)
+                            .onChange(of: notificationsEnabled) {
+                                if notificationsEnabled {
+                                    setupHydrationNotifications()
+                                } else {
+                                    cancelHydrationNotifications()
+                                }
+                            }
                     }
-                    
-                })
-                
-                Section(header: Text("PREFRENCES"), content: {
-                    HStack{
-                        Image(systemName: "globe")
-                        Text("Language")
-                    }
-                    HStack{
-                        Image(systemName: "moon")
-                        Toggle(isOn: $isDarkModeEnabled) {
-                            Text("Dark Mode")
-                        }
-                    }
-                    HStack{
-                        Image(systemName: "wifi")
-                        Toggle(isOn: $downloadViaWifiEnabled) {
-                            Text("Only Download via Wi-Fi")
-                        }
-                    }
-                    HStack{
-                        Image(systemName: "iphone.gen1.badge.play")
-                        Text("Play in Background")
-                    }
-                    
-                })
+                }
             }
-            .navigationBarTitle("Settings")
         }
     }
 }

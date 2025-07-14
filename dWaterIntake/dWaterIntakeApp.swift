@@ -28,14 +28,18 @@ struct dWaterIntakeApp: App {
                 .environment(\.managedObjectContext, manager.container.viewContext)
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                        setupHydrationNotifications()
+                        let notificationsEnabled = UserDefaults.standard.bool(forKey: "notificationsEnabled")
+                        if notificationsEnabled {
+                            setupHydrationNotifications()
+                        } else {
+                            print("Notifications disabled by user preference.")
+                        }
                     }
                 }
         }
         .onChange(of: scenePhase) { oldPhase, newPhase in
             if newPhase == .background || newPhase == .inactive {
                 dashboardViewModel.handleDateDifference()
-//                dashboardViewModel.saveDailyIntake()
             }
         }
     }
