@@ -50,13 +50,6 @@ class OnboardingViewModel: ObservableObject {
             errorMessage = ErrorWrapper(message: "Age must be a valid number.")
             return false
         }
-        
-//        let genderRegex = "^(?i)(male|female)$" // Allows: male, Female.
-//        if !NSPredicate(format: "SELF MATCHES %@", genderRegex).evaluate(with: onboardingModel.gender) {
-//            errorMessage = ErrorWrapper(message: "Gender must be Male, Female, or Other.")
-//            return false
-//        }
-        
         errorMessage = nil
         return true
     }
@@ -79,7 +72,7 @@ class OnboardingViewModel: ObservableObject {
         do {
             try context.save()
             print("User details saved to CoreData")
-            printCoreDataPath()
+            printCoreDataPath(using: context)
             clearFields()
             DispatchQueue.main.async {
                 self.isLoggedIn = true
@@ -95,10 +88,12 @@ class OnboardingViewModel: ObservableObject {
     func clearFields() {
         onboardingModel = OnboardingModel(name: "", weight: "", height: "", age: "", gender: "", femaleCondition: "")
     }
-
-    private func printCoreDataPath() {
-        if let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last {
-            print("Core Data Path: \(url.path)")
+    private func printCoreDataPath(using context: NSManagedObjectContext) {
+        if let coordinator = context.persistentStoreCoordinator,
+           let store = coordinator.persistentStores.first,
+           let url = store.url {
+            print("Core Data SQLite path:")
+            print(url.path)
         }
     }
 }

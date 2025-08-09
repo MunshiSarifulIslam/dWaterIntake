@@ -45,17 +45,7 @@ struct DashboardView: View {
                 HStack {
                     Spacer()
                     Text("Water Intake")
-                        .foregroundStyle(LinearGradient(colors: [Color(hex: "#00FFFF"), Color(hex: "#7831F3")], startPoint: .leading, endPoint: .trailing))
-                        .fontWeight(.bold)
-                        .padding()
-                        .padding(.horizontal, 60)
-                        .background(LinearGradient(colors: [Color(hex: "#00FFFF").opacity(0.1), Color(hex: "#00FFFF").opacity(0.5)], startPoint: .leading, endPoint: .trailing))
-                        .cornerRadius(10)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color(hex: "#00FFFF").opacity(0.5), lineWidth: 1)
-                        )
-                        .shadow(color: Color.black.opacity(0.25), radius: 10, x: 0, y: 5)
+                        .PrimaryButtonStyle()
                     Spacer()
                 }
             }
